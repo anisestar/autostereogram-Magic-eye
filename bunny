@@ -5,3 +5,8 @@ git commit -m "first commit"
 git branch -M main
 git remote add origin https://github.com/anisestar/autostereogram-Magic-eye.git
 git push -u origin main
+# Use default settings (1/8 sized pattern)
+$ python magicpy.py bunny.png -o bunny.png
+
+# Make random pattern 1/10 of the depthmap size
+$ python magicpy.py -p 10 bunny.png -o bunny.png
